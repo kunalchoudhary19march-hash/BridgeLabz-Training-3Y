@@ -1,0 +1,44 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+}
+.gallery-title {
+text-align: center;
+padding: 1.5rem 0;
+}
+.gallery {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 1.5rem;
+padding: 0 2rem 2rem;
+}
+.card {
+background: #f4f4f4;
+border-radius: 8px;
+padding: 1.5rem;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 180px;
+text-align: center;
+transition: transform 0.3s;
+}
+.card:hover {
+transform: scale(1.05);
+}
+.price {
+font-weight: bold;
+color: #2a7f2a;
+}
+@media (max-width: 900px) {
+.gallery {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+@media (max-width: 500px) {
+.gallery {
+grid-template-columns: 1fr;
+}
+}
