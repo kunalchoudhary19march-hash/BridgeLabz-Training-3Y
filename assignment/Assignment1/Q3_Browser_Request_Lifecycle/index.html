@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Q3 - Browser Request & Display Lifecycle</title>
+<style>
+body { font-family: 'Segoe UI', Arial, sans-serif; padding: 2rem; background: #fafafa; }
+.step { background: #fff; border-left: 4px solid #4caf50; padding: 1rem; margin-bottom: 1rem; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+h1 { color: #2e7d32; }
+</style>
+</head>
+<body>
+<h1>Assignment 1 - Q3: How a Browser Requests and Displays a Web Page</h1>
+<div class="step">
+<h3>1. DNS Lookup & Connection</h3>
+<p>When a user types a URL in the browser, the browser first performs a DNS lookup to convert the domain name into an IP address. It then establishes a TCP connection with the web server and sends an HTTP/HTTPS request for the requested page.</p>
+</div>
+<div class="step">
+<h3>2. Server Processing & Response</h3>
+<p>The web server processes this request — it may fetch data from a database or simply locate the requested file — and sends back a response containing HTML, CSS, JavaScript, and other assets (images, fonts).</p>
+</div>
+<div class="step">
+<h3>3. Rendering & Execution</h3>
+<p>The browser's rendering engine parses the HTML to build the DOM, applies CSS to build the render tree (CSSOM), and executes JavaScript to add interactivity. Finally, the browser paints the page pixel by pixel on the screen for the user to see.</p>
+</div>
+</body>
+</html>

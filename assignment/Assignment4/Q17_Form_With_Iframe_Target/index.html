@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Q17: form.html - submits into an iframe using the target attribute,
+so no JavaScript is required to load result.html -->
+<meta charset="UTF-8">
+<title>Q17 - Form with Iframe Target</title>
+</head>
+<body>
+<h1>Sample Form</h1>
+<!-- The form's target attribute matches the iframe's name attribute,
+so clicking Submit loads result.html directly inside the iframe -->
+<form action="q17_result.html" method="get" target="resultFrame">
+<label for="text_input">Enter some text:</label>
+<input type="text" id="text_input" name="text_input">
+<input type="submit" value="Submit">
+</form>
+<iframe name="resultFrame" title="Result Frame" width="400" height="100"></iframe>
+</body>
+</html>
