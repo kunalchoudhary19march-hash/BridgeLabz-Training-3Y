@@ -1,0 +1,45 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body { font-family: Arial, sans-serif; background: #ecf0f1; }
+
+/* Flexbox centers all boxes vertically and horizontally */
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; /* horizontal centre */
+  align-items: center; /* vertical centre */
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.box {
+  padding: 12px;
+  color: #fff;
+  border-radius: 6px;
+}
+.box h2 { margin-top: 0; }
+
+/* Box 1: fixed size using px */
+.box1 {
+  width: 250px;
+  height: 150px;
+  background: #e74c3c;
+}
+
+/* Box 2: relative units (% and vh) with min-height and max-width */
+.box2 {
+  width: 30%;
+  max-width: 300px; /* never wider than 300px */
+  height: 30vh;
+  min-height: 120px; /* never shorter than 120px */
+  background: #2980b9;
+}
+
+/* Box 3: em units + overflow scrolling */
+.box3 {
+  width: 15em;
+  height: 10em;
+  overflow: auto; /* scrollbar if content is bigger than the box */
+  background: #27ae60;
+}

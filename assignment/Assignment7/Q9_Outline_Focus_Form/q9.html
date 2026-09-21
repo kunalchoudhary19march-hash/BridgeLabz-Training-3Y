@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outline and Focus Form</title>
+  <link rel="stylesheet" href="q9.css">
+</head>
+<body>
+  <header>
+    <h1>Outline &amp; Focus Styling</h1>
+  </header>
+  <main>
+    <section>
+      <form action="#" method="post">
+        <div class="field">
+          <label for="name">Name (solid outline)</label>
+          <input type="text" id="name" class="out-solid" placeholder="Your name">
+        </div>
+        <div class="field">
+          <label for="email">Email (dashed outline)</label>
+          <input type="email" id="email" class="out-dashed" placeholder="you@example.com">
+        </div>
+        <div class="field">
+          <label for="topic">Topic (dotted outline)</label>
+          <input type="text" id="topic" class="out-dotted" placeholder="Subject">
+        </div>
+        <div class="field">
+          <label for="msg">Message (outline-offset)</label>
+          <textarea id="msg" rows="5" class="out-offset" placeholder="Type here..."></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Click into each field to see the focus outline.</p>
+  </footer>
+</body>
+</html>

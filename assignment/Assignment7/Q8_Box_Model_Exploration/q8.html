@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model Exploration</title>
+  <link rel="stylesheet" href="q8.css">
+</head>
+<body>
+  <header>
+    <h1>CSS Box Model</h1>
+  </header>
+  <main class="wrapper">
+    <!-- Visual representation of all four layers -->
+    <section class="demo">
+      <h2>Box Model Layers</h2>
+      <div class="margin-layer">Margin
+        <div class="border-layer">Border
+          <div class="padding-layer">Padding
+            <div class="content-layer">Content</div>
+          </div>
+        </div>
+      </div>
+      <ul class="legend">
+        <li><strong>Content:</strong> the actual text or image.</li>
+        <li><strong>Padding:</strong> space between content and border.</li>
+        <li><strong>Border:</strong> line that wraps the padding.</li>
+        <li><strong>Margin:</strong> outer space separating from other elements.</li>
+      </ul>
+    </section>
+    <!-- content-box vs border-box -->
+    <section class="demo">
+      <h2>content-box vs border-box</h2>
+      <div class="compare">
+        <div class="size content-box">
+          <p>content-box<br>width 200px + padding + border = 250px total</p>
+        </div>
+        <div class="size border-box">
+          <p>border-box<br>width 200px includes padding + border</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

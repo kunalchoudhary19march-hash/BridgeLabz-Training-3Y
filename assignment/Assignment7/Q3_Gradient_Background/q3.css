@@ -1,0 +1,51 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+/* Fixed header and footer */
+header, footer {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 12px;
+  z-index: 10;
+}
+header { top: 0; }
+footer { bottom: 0; }
+header h1, footer p { margin: 0; }
+
+/* Leave space so content is not hidden under header/footer */
+main { padding: 60px 0; }
+
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.text {
+  max-width: 600px;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 24px;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Linear gradient + fixed attachment (parallax-like effect) */
+.linear {
+  background: linear-gradient(135deg, #ff512f, #dd2476, #4a00e0);
+  background-attachment: fixed;
+}
+
+/* Radial gradient */
+.radial {
+  background: radial-gradient(circle at center, #f9d423, #ff4e50, #1a2a6c);
+}

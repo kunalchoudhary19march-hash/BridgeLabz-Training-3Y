@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  background: #fdfaf5;
+  color: #333;
+  /* sans-serif body font */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+header, footer { text-align: center; padding: 24px; background: #2c3e50; color: #fff; }
+
+/* Serif family, heavy weight, large size for headings */
+h1 { font-family: Georgia, "Times New Roman", serif; font-size: 2.6rem; font-weight: 700;
+  letter-spacing: 2px; margin: 0; }
+h2 { font-family: Georgia, serif; font-size: 1.8rem; font-weight: 600; color: #2c3e50; }
+.subtitle { font-weight: 300; font-size: 1rem; }
+
+main { max-width: 720px; margin: 30px auto; padding: 0 20px; }
+
+/* Readability: line-height, letter-spacing and alignment */
+article p {
+  line-height: 1.8;
+  letter-spacing: 0.3px;
+  text-align: justify;
+}
+
+/* Emphasis with the first letter and first line */
+.intro::first-letter {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: #c0392b;
+  float: left;
+  line-height: 1;
+  padding-right: 8px;
+}
+.intro::first-line {
+  font-variant: small-caps;
+  color: #2c3e50;
+}
+
+/* Custom styling for mark, strong, em */
+mark { background: #ffe680; color: #5a3e00; padding: 0 4px; }
+strong { color: #c0392b; font-weight: 700; }
+em { color: #2980b9; font-style: italic; }
+
+.mono { font-family: "Courier New", monospace; font-size: 0.95rem;
+  background: #f0f0f0; padding: 10px; border-left: 4px solid #999; }

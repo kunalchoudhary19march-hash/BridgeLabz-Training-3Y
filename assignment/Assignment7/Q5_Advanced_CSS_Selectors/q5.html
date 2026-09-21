@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced CSS Selectors</title>
+  <link rel="stylesheet" href="q5.css">
+</head>
+<body>
+  <header>
+    <h1>Advanced CSS Selectors</h1>
+  </header>
+  <main>
+    <!-- Attribute selectors -->
+    <section>
+      <h2>Attribute Selectors</h2>
+      <form>
+        <input type="text" placeholder="Text input (blue border)">
+        <input type="email" placeholder="Email input (default)">
+      </form>
+      <ul class="links">
+        <li><a href="https://example.com">Secure link (https)</a></li>
+        <li><a href="http://example.org">Normal link (http)</a></li>
+      </ul>
+    </section>
+
+    <!-- Pseudo-classes: nth-child, hover -->
+    <section>
+      <h2>Pseudo-classes (:nth-child, :hover)</h2>
+      <ul class="items">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+      </ul>
+    </section>
+
+    <!-- Pseudo-elements -->
+    <section>
+      <h2>Pseudo-elements (::before, ::after)</h2>
+      <p class="note">This paragraph has generated content.</p>
+    </section>
+
+    <!-- Combinators -->
+    <section class="combinators">
+      <h2>Combinators</h2>
+      <div class="box">
+        <p>Direct child paragraph.</p>
+        <span>
+          <p>Nested paragraph (descendant only).</p>
+        </span>
+      </div>
+      <h3>Heading</h3>
+      <p>Adjacent sibling paragraph (h3 + p).</p>
+      <p>General sibling paragraph (h3 ~ p).</p>
+    </section>
+  </main>
+</body>
+</html>

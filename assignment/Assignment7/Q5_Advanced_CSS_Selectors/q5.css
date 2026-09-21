@@ -1,0 +1,44 @@
+body { font-family: Arial, sans-serif; margin: 0; background: #f9f9f9; color: #222; }
+header { background: #34495e; color: #fff; text-align: center; padding: 16px; }
+main { max-width: 800px; margin: auto; padding: 20px; }
+section { background: #fff; padding: 16px; margin-bottom: 20px; border-radius: 6px; }
+
+/* ===== 1. ATTRIBUTE SELECTORS ===== */
+/* Selects inputs whose type attribute is exactly "text" */
+[type="text"] { border: 2px solid #3498db; padding: 8px; }
+
+/* Selects links whose href STARTS WITH "https" */
+[href^="https"] { color: green; font-weight: bold; }
+
+/* ===== 2. PSEUDO-CLASSES ===== */
+/* :hover - when the mouse is over the element */
+.items li:hover { background: #f1c40f; }
+
+/* :focus - when the element is selected/typed into */
+input:focus { outline: 3px solid orange; background: #fffbe6; }
+
+/* :nth-child() - even items get a light background */
+.items li:nth-child(even) { background: #ecf0f1; }
+
+/* every third item is bold */
+.items li:nth-child(3n) { font-weight: bold; }
+
+/* ===== 3. PSEUDO-ELEMENTS ===== */
+/* ::before inserts content before the element's content */
+.note::before { content: "\2605 "; color: gold; }
+
+/* ::after inserts content after the element's content */
+.note::after { content: " (generated text)"; color: gray; font-size: 0.8em; }
+
+/* ===== 4. COMBINATORS ===== */
+/* Child combinator (>): only DIRECT children of .box */
+.box > p { color: crimson; }
+
+/* Descendant combinator (space): any p inside .box, at any depth */
+.box p { border-left: 4px solid #e67e22; padding-left: 8px; }
+
+/* Adjacent sibling (+): the p immediately after h3 */
+.combinators h3 + p { background: #d5f5e3; }
+
+/* General sibling (~): all p siblings after h3 */
+.combinators h3 ~ p { font-style: italic; }
