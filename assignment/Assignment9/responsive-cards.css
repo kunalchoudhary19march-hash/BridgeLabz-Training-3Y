@@ -1,0 +1,38 @@
+* { box-sizing: border-box; }
+
+body { margin: 0; font-family: Arial, sans-serif; background: #eef1f5; }
+
+header, footer { background: #34495e; color: #fff; text-align: center; padding: 16px; }
+
+/* Flexbox row that wraps; gap gives equal spacing */
+.cards {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 20px;
+ padding: 30px 20px;
+ max-width: 1200px;
+ margin: auto;
+}
+
+/* Desktop: 4 columns -> each card is 25% minus its share of the gaps */
+.card {
+ flex: 0 0 calc(25% - 15px);
+ padding: 24px;
+ background: #fff;
+ border-radius: 8px;
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+ transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hover: background colour changes */
+.card:hover { background: #3498db; color: #fff; }
+
+/* Tablet: 2 columns */
+@media (max-width: 900px) {
+ .card { flex: 0 0 calc(50% - 10px); }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 600px) {
+ .card { flex: 0 0 100%; }
+}

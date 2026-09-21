@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Responsive CSS Cheat Sheet</title>
+ <link rel="stylesheet" href="css-cheat-sheet.css">
+</head>
+<body>
+ <header><h1>Responsive CSS Cheat Sheet</h1></header>
+ <main>
+ <section class="grid">
+ <article class="box">
+ <h2>Filters</h2>
+ <p>Apply visual effects to elements.<br><code>filter: grayscale(100%);</code></p>
+ </article>
+ <article class="box">
+ <h2>Media Queries</h2>
+ <p>Apply styles at certain screen widths.<br><code>@media (max-width: 700px) { ... }</code></p>
+ </article>
+ <article class="box">
+ <h2>Responsive Design</h2>
+ <p>Layouts that adapt to any device.<br><code>display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));</code></p>
+ </article>
+ <article class="box">
+ <h2>Typography</h2>
+ <p>Fluid text sizing with relative units.<br><code>font-size: clamp(1rem, 2vw, 1.5rem);</code></p>
+ </article>
+ <article class="box">
+ <h2>Flexbox</h2>
+ <p>One-dimensional layout.<br><code>display: flex; gap: 20px;</code></p>
+ </article>
+ <article class="box">
+ <h2>Viewport Meta</h2>
+ <p>Makes pages scale on mobile.<br><code>&lt;meta name="viewport" content="width=device-width"&gt;</code></p>
+ </article>
+ </section>
+ </main>
+ <footer><p>Keep this sheet handy while coding.</p></footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Responsive Design Principles</title>
+ <link rel="stylesheet" href="design-principles.css">
+</head>
+<body>
+ <header><h1>Responsive Design Principles</h1></header>
+ <main>
+ <section class="principles">
+ <article class="box">
+ <h2>Fluid Layouts</h2>
+ <p>Use percentages or flexible units instead of fixed pixels so layouts stretch and shrink.</p>
+ <pre><code>.container {
+  width: 90%;
+  max-width: 1000px;
+}</code></pre>
+ </article>
+ <article class="box">
+ <h2>Flexible Media</h2>
+ <p>Images and video scale within their container and never overflow it.</p>
+ <pre><code>img {
+  max-width: 100%;
+  height: auto;
+}</code></pre>
+ </article>
+ <article class="box">
+ <h2>Breakpoints</h2>
+ <p>Media queries change the layout at chosen screen widths.</p>
+ <pre><code>@media (max-width: 600px) {
+  .grid { grid-template-columns: 1fr; }
+}</code></pre>
+ </article>
+ </section>
+ </main>
+ <footer><p>Hover over a box.</p></footer>
+</body>
+</html>

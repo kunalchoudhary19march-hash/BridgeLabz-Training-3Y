@@ -1,0 +1,50 @@
+* { box-sizing: border-box; }
+
+body { margin: 0; font-family: Arial, sans-serif; background: #f0f3f7; color: #222; }
+
+header, footer { background: #2c3e50; color: #fff; text-align: center; padding: 16px; }
+
+/* Three boxes in a grid */
+.principles {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 24px;
+ padding: 30px;
+ max-width: 1100px;
+ margin: auto;
+}
+
+.box {
+ background: #fff;
+ color: #222;
+ padding: 20px;
+ border-radius: 10px;
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+ transition: all 0.4s ease;
+}
+
+.box h2 { margin-top: 0; }
+.box p { line-height: 1.6; }
+
+pre {
+ background: #2d3436;
+ color: #dfe6e9;
+ padding: 12px;
+ border-radius: 6px;
+ overflow-x: auto;
+ font-size: 0.85rem;
+}
+
+/* Hover: background gradient + text colour change.
+   background-image is not animated, so we transition colour and shadow. */
+.box:hover {
+ background: linear-gradient(135deg, #6a11cb, #2575fc);
+ color: #fff;
+ transform: translateY(-4px);
+ box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
+}
+
+/* Below 600px: single column */
+@media (max-width: 600px) {
+ .principles { grid-template-columns: 1fr; padding: 16px; }
+}

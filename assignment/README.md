@@ -16,3 +16,4 @@ This section contains all structured code solutions and resources for Web Develo
 | **Assignment 6** | HTML & CSS — Modern Flexbox and Grid Layout Solutions (Q1–Q10) | [Assignment 6](./Assignment6/) |
 | **Assignment 7** | HTML & CSS — Borders, Styling, Selectors & Transitions (Q1–Q10) | [Assignment 7](./Assignment7/) |
 | **Assignment 8** | HTML & CSS Solutions — Pseudo-Classes, Tooltips, Grid Showcase, Selectors, Animations & UI (Q1–Q10) | [Assignment 8](./Assignment8/) |
+| **Assignment 9** | HTML & CSS Solutions — Responsive Web Design, Media Queries, Filters, Fluid Typography & Dashboard (Q1–Q10) | [Assignment 9](./Assignment9/) |

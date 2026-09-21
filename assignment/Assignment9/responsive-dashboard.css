@@ -1,0 +1,67 @@
+* { box-sizing: border-box; }
+
+body { margin: 0; font-family: Arial, sans-serif; background: #eef1f5; color: #222; }
+
+/* Load animation */
+@keyframes slideUp {
+ from { opacity: 0; transform: translateY(20px); }
+ to { opacity: 1; transform: translateY(0); }
+}
+
+/* Dashboard layout using CSS Grid */
+.layout {
+ min-height: 100vh;
+ display: grid;
+ grid-template-columns: 220px 1fr;
+ grid-template-rows: auto 1fr;
+ grid-template-areas:
+ "header header"
+ "sidebar content";
+}
+
+header { grid-area: header; background: #2c3e50; color: #fff; padding: 16px 24px; }
+header h1 { margin: 0; font-size: 1.4rem; }
+
+.sidebar { grid-area: sidebar; background: #34495e; padding: 16px 0; }
+.sidebar nav { display: flex; flex-direction: column; }
+.sidebar a { color: #ecf0f1; text-decoration: none; padding: 12px 24px; transition: background 0.3s ease; }
+.sidebar a:hover, .sidebar a.active { background: #3498db; }
+
+/* Main content: cards in a responsive grid */
+.content {
+ grid-area: content;
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ gap: 20px;
+ padding: 24px;
+ align-content: start;
+}
+
+.card {
+ background: #fff;
+ padding: 20px;
+ border-radius: 10px;
+ box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+ animation: slideUp 0.8s ease-out both;
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h2 { margin-top: 0; color: #2980b9; }
+
+/* Hover: slight scale + bigger shadow */
+.card:hover { transform: scale(1.05); box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25); }
+
+/* Below 750px: sidebar moves to the top, content stacks below */
+@media (max-width: 750px) {
+ .layout {
+ grid-template-columns: 1fr;
+ grid-template-areas:
+ "header"
+ "sidebar"
+ "content";
+ grid-template-rows: auto auto 1fr;
+ }
+ .sidebar nav { flex-direction: row; flex-wrap: wrap; }
+ .sidebar a { padding: 10px 16px; }
+ .content { grid-template-columns: 1fr; }
+}
