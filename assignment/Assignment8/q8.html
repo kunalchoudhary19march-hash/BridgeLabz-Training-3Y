@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Sizing Comparison</title>
+    <link rel="stylesheet" href="q8.css">
+</head>
+<body>
+    <header><h1>Box-Sizing Comparison</h1></header>
+    <main>
+        <section class="compare">
+            <article class="box content-box">
+                <h2>Default (content-box)</h2>
+                <p>Width 250px is only the content. Padding (30px x 2) and border (5px x 2) are added on top.</p>
+                <p class="total"><strong>Total width = 250 + 60 + 10 = 320px</strong></p>
+            </article>
+            <article class="box border-box">
+                <h2>box-sizing: border-box</h2>
+                <p>Width 250px already includes the padding and border, so the content shrinks to fit.</p>
+                <p class="total"><strong>Total width = 250px</strong></p>
+            </article>
+        </section>
+        <section class="explain">
+            <h2>Why it matters</h2>
+            <p>With border-box, the width you set is the width you get. This makes layouts much easier to calculate and is why most developers apply it to every element.</p>
+        </section>
+    </main>
+    <footer><p>Box-sizing demo</p></footer>
+</body>
+</html>

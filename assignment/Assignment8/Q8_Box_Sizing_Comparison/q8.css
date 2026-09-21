@@ -1,0 +1,32 @@
+body { margin: 0; font-family: Arial, sans-serif; background: #f5f6fa; color: #222; }
+
+header, footer { background: #2f3640; color: #fff; text-align: center; padding: 16px; }
+
+main { display: flex; flex-direction: column; align-items: center; padding: 30px 20px; gap: 30px; }
+
+/* Two boxes side by side */
+.compare { display: flex; gap: 30px; justify-content: center; flex-wrap: wrap; align-items: flex-start; }
+
+/* Equal width, padding and border on BOTH boxes */
+.box {
+    width: 250px;
+    padding: 30px;
+    border: 5px solid #2f3640;
+}
+
+/* Default behaviour: padding + border are added to the width */
+.content-box { box-sizing: content-box; background: #ff9f9f; }
+
+/* border-box: padding + border are included in the width */
+.border-box { box-sizing: border-box; background: #9fd8ff; }
+
+.total { font-size: 0.95rem; }
+
+.explain { max-width: 600px; text-align: center; line-height: 1.6; }
+
+/* Responsive: boxes stack and never overflow small screens */
+@media (max-width: 700px) {
+    .compare { flex-direction: column; align-items: center; }
+    .box { max-width: 100%; }
+    .content-box { width: 250px; }
+}

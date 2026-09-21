@@ -1,0 +1,33 @@
+/* Element selector: applies to every <body> */
+body { margin: 0; font-family: Arial, sans-serif; background: #f7f7f7; color: #222; }
+
+/* Group of element selectors: header and footer share a style */
+header, footer { background: #34495e; color: #fff; text-align: center; padding: 16px; }
+
+main { max-width: 700px; margin: 20px auto; padding: 0 16px; }
+
+section { background: #fff; padding: 16px 20px; margin-bottom: 20px; border-radius: 6px; }
+
+/* Element selector: all paragraphs get spacing */
+p { line-height: 1.6; margin: 8px 0; }
+
+/* Class selector (.): every element with class="highlight" */
+.highlight { background: #fff3b0; padding: 6px; }
+
+/* ID selector (#): the single element with id="special" */
+#special { color: #c0392b; font-weight: bold; }
+
+/* Attribute selector: links whose href starts with https */
+a[href^="https"] { color: green; font-weight: bold; }
+
+/* Descendant selector (space): ALL <li> inside .combinators */
+.combinators li { color: #2c3e50; }
+
+/* Child selector (>): only DIRECT child <ul> items of section's ul */
+.combinators > ul > li { font-weight: bold; }
+
+/* Adjacent sibling (+): the FIRST <p> right after <h3> */
+h3 + p { background: #d5f5e3; padding: 6px; }
+
+/* General sibling (~): ALL <p> siblings after <h3> */
+h3 ~ p { border-left: 4px solid #27ae60; padding-left: 8px; }

@@ -1,0 +1,75 @@
+* { box-sizing: border-box; }
+
+body { margin: 0; font-family: Arial, sans-serif; background: #f1f2f6; }
+
+header, footer { background: #2c3e50; color: #fff; text-align: center; padding: 16px; }
+
+/* Flexbox distributes examples evenly */
+.examples {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 60px 20px;
+}
+
+.example { width: 220px; text-align: center; }
+.example p { color: #555; font-size: 0.9rem; margin-top: 20px; }
+
+/* ---- Example 1: pseudo-class + transition + transform + shadow ---- */
+.grow-btn {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    background: #3498db;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.grow-btn:hover {
+    background: #e67e22;
+    transform: scale(1.12); /* grows slightly */
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+.grow-btn:active { transform: scale(0.98); }
+
+/* ---- Example 2: hover + focus with rotate and translate ---- */
+.spin-card {
+    height: 100px;
+    display: flex; align-items: center; justify-content: center;
+    background: #2ecc71;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+}
+
+.spin-card:hover, .spin-card:focus {
+    background: #27ae60;
+    transform: translateY(-8px) rotate(-4deg);
+    box-shadow: 0 14px 24px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+/* ---- Example 3: link slides and changes colour ---- */
+.slide-link {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #9b59b6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.slide-link:hover, .slide-link:focus {
+    background: #8e44ad;
+    transform: translateX(12px);
+    box-shadow: -6px 6px 14px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,54 @@
+* { box-sizing: border-box; }
+
+body { margin: 0; font-family: Arial, sans-serif; background: #f2f5f9; color: #222; }
+
+header, footer { background: #2c3e50; color: #fff; text-align: center; padding: 16px; }
+
+/* Flexbox: all examples in one row */
+.row {
+    display: flex;
+    gap: 16px;
+    padding: 30px 20px;
+    justify-content: center;
+}
+
+.example {
+    flex: 1;
+    background: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+
+.example p { font-size: 0.9rem; }
+
+code { background: #eee; padding: 2px 5px; border-radius: 3px; }
+
+/* :hover - link changes colour when hovered */
+.demo-link {
+    display: inline-block; padding: 8px 14px; text-decoration: none;
+    color: #2980b9; border: 2px solid #2980b9; border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.demo-link:hover { background: #2980b9; color: #fff; }
+
+/* :focus - input highlights when selected */
+.demo-input { padding: 8px; border: 2px solid #bbb; border-radius: 4px; width: 100%; }
+.demo-input:focus { border-color: #27ae60; background: #eafaf1; outline: none; }
+
+/* :active - button changes while being pressed */
+.demo-btn { padding: 8px 16px; border: none; border-radius: 4px; background: #8e44ad; color: #fff; cursor: pointer; }
+.demo-btn:active { background: #e74c3c; transform: scale(0.95); }
+
+/* :nth-child() - style even items */
+.demo-list { list-style: none; padding: 0; margin: 0 0 10px; }
+.demo-list li { padding: 6px; background: #ecf0f1; }
+.demo-list li:nth-child(even) { background: #f39c12; color: #fff; }
+
+/* Small screens: keep a row but let it scroll horizontally if needed */
+@media (max-width: 700px) {
+    .row { overflow-x: auto; justify-content: flex-start; }
+    .example { min-width: 200px; }
+}

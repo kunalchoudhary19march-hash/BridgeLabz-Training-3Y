@@ -1,0 +1,68 @@
+* { box-sizing: border-box; }
+
+body { margin: 0; font-family: Arial, sans-serif; background: #1e272e; color: #fff; }
+
+/* Flexbox centres everything vertically and horizontally */
+.stage {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+.animations { display: flex; gap: 60px; flex-wrap: wrap; justify-content: center; align-items: flex-end; }
+
+figure { margin: 0; width: 200px; text-align: center; }
+figcaption { margin-top: 16px; }
+
+/* ---------- 1. Moving box ---------- */
+@keyframes slide {
+    from { transform: translateX(-50px); background: #e74c3c; }
+    to { transform: translateX(50px); background: #f1c40f; }
+}
+
+.box {
+    width: 60px; height: 60px; margin: 0 auto;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; /* repeat forever */
+    animation-direction: alternate; /* go back and forth */
+}
+
+/* ---------- 2. Bouncing ball ---------- */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-100px); }
+    100% { transform: translateY(0); }
+}
+
+.ball {
+    width: 50px; height: 50px; margin: 0 auto;
+    border-radius: 50%;
+    background: #3498db;
+    animation: bounce 1.2s ease-in-out 0.5s infinite; /* 0.5s = animation-delay */
+}
+
+/* ---------- 3. Colour-changing text ---------- */
+@keyframes colours {
+    0% { color: #e74c3c; }
+    33% { color: #2ecc71; }
+    66% { color: #3498db; }
+    100% { color: #e74c3c; }
+}
+
+.text {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    animation-name: colours;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s; /* starts after 1 second */
+    animation-iteration-count: 5; /* runs 5 times */
+    animation-direction: normal;
+}
