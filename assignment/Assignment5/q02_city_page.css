@@ -1,0 +1,54 @@
+﻿/* ---------- Q2: Multi-section informational page ---------- */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Georgia, serif; color: #222; }
+header {
+padding: 1rem 5%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+background-color: #1f3a5f;
+color: #fff;
+border-bottom: 4px solid #ffd166;
+}
+header h1 { margin: 0; }
+nav a { color: #fff; margin-left: 1.2rem; text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+/* Every section is full width with its own background and clear spacing */
+main section {
+width: 100%;
+padding: 6rem 10%;
+margin: 0;
+border-bottom: 6px solid #ffffff;
+color: #fff;
+}
+main section p { max-width: 40rem; font-size: 1.2rem; line-height: 1.7; }
+/* Different font sizes and weights for headings */
+h1 { font-size: 2rem; font-weight: 700; }
+h2 { font-size: 3rem; font-weight: 800; margin: 0 0 1rem; }
+#culture h2 { font-size: 2.6rem; font-weight: 600; }
+#food h2 { font-size: 2.2rem; font-weight: 400; letter-spacing: 3px; text-transform: uppercase;
+}
+#visit h2 { font-size: 1.8rem; font-weight: 300; font-style: italic; }
+/* Linear gradient section */
+.s-linear { background: linear-gradient(135deg, #1f3a5f, #4f8fc0, #7fd1a8); }
+/* Radial gradient section */
+.s-radial { background: radial-gradient(circle at center, #f0b45a, #7b2d5b); }
+/* background-attachment: fixed => image stays still while page scrolls (parallax-like) */
+.s-parallax-1, .s-parallax-2 {
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+min-height: 70vh;
+}
+.s-parallax-1 { background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+url("images/hero.svg"); }
+.s-parallax-2 { background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+url("images/city.svg"); }
+footer {
+padding: 1.5rem;
+text-align: center;
+background-color: #14283f;
+color: #fff;
+}
+footer p { margin: 0; }

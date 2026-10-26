@@ -1,0 +1,41 @@
+﻿/* ---------- Q4: Long Article ---------- */
+body {
+margin: 0;
+background-color: #f6f3ee;
+color: #222;
+font-family: Georgia, "Times New Roman", serif;
+line-height: 1.7;
+}
+article {
+max-width: 720px;
+margin: 0 auto;
+padding: 40px 20px;
+}
+h1 { margin: 0; font-size: 2.4rem; color: #1f3a5f; }
+h2 { margin: 6px 0 30px; font-size: 1rem; font-weight: normal; color: #666; }
+/* Consistent spacing between paragraphs */
+p { margin: 0 0 1.5em; font-size: 1.1rem; }
+/* Larger first letter of each paragraph */
+p::first-letter {
+font-size: 2.2em;
+font-weight: bold;
+color: #1f3a5f;
+}
+/* Bold first line of each paragraph */
+p::first-line { font-weight: bold; }
+/* Highlighted keywords */
+mark {
+background-color: #ffd166;
+color: #222;
+padding: 0 4px;
+border-radius: 3px;
+}
+/* Blockquote: left border + background colour */
+blockquote {
+margin: 2em 0;
+padding: 16px 24px;
+border-left: 6px solid #1f3a5f;
+background-color: #e4ebf3;
+font-style: italic;
+font-size: 1.2rem;
+}

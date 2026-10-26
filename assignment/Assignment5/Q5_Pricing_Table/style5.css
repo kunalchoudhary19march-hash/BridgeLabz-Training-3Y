@@ -1,0 +1,53 @@
+﻿/* ---------- Q5: Pricing Table ---------- */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background-color: #eef2f7; color: #222; }
+header { text-align: center; padding: 2rem 1rem 0; }
+header h1 { margin: 0; color: #1f3a5f; }
+/* Grid: three equal columns; grid items stretch, so all boxes have equal height */
+.plans {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 24px;
+max-width: 1000px;
+margin: 0 auto;
+padding: 40px 24px;
+}
+/* Each plan is a flex column so the button can be pushed to the bottom */
+.plan {
+display: flex;
+flex-direction: column;
+padding: 28px;
+text-align: center;
+background-color: #ffffff;
+border: 2px solid #c9d3e0;
+border-radius: 12px;
+transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.plan h2 { margin-top: 0; color: #1f3a5f; }
+.plan ul { list-style: none; padding: 0; margin: 0 0 20px; line-height: 2; }
+.price { margin: auto 0 20px; font-size: 2.4rem; font-weight: bold; color: #1f3a5f; } /* margin-top:auto keeps price+button at bottom */
+.price span { font-size: 1rem; font-weight: normal; color: #666; }
+.btn {
+display: inline-block;
+padding: 12px 20px;
+background-color: #1f3a5f;
+color: #fff;
+text-decoration: none;
+border-radius: 6px;
+transition: background-color 0.3s ease;
+}
+.btn:hover { background-color: #e0a100; color: #222; }
+/* Hover: slightly enlarge + change background colour */
+.plan:hover {
+transform: scale(1.05);
+background-color: #e4f0fb;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+}
+/* Most popular plan: different border colour/style */
+.plan.popular {
+border: 4px solid #e0a100;
+background-color: #fffaf0;
+}
+@media (max-width: 800px) {
+.plans { grid-template-columns: 1fr; }
+}

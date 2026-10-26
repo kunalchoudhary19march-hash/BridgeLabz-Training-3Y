@@ -1,0 +1,46 @@
+﻿/* ---------- Q9: Newspaper / Magazine Columns ---------- */
+* { box-sizing: border-box; }
+/* Page background colour and padding around the content */
+body {
+margin: 0;
+padding: 30px;
+background-color: #e8e1d3;
+font-family: Georgia, "Times New Roman", serif;
+color: #222;
+}
+.paper {
+max-width: 1000px;
+margin: 0 auto;
+padding: 30px;
+background-color: #fbf8f1;
+border: 1px solid #b9ae98;
+column-count: 3; /* three vertical columns */
+column-gap: 36px;
+column-rule: 1px solid #c9bfa8;
+}
+/* Heading spans across all columns */
+h1 {
+column-span: all;
+margin: 0 0 20px;
+padding-bottom: 12px;
+text-align: center;
+font-size: 2.2rem;
+border-bottom: 3px double #222;
+}
+p {
+margin: 0 0 1em;
+font-size: 1rem;
+line-height: 1.6;
+text-align: justify; /* justified text */
+}
+/* Image floated to the left; text wraps around it */
+img {
+float: left;
+width: 45%;
+height: auto;
+margin: 0 12px 8px 0;
+border: 3px solid #222;
+}
+/* Remains readable when the window is resized */
+@media (max-width: 800px) { .paper { column-count: 2; } }
+@media (max-width: 500px) { .paper { column-count: 1; } }

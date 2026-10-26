@@ -1,0 +1,19 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600">
+  <defs>
+    <linearGradient id="citySky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f2438" />
+      <stop offset="60%" stop-color="#4f3b58" />
+      <stop offset="100%" stop-color="#d97d54" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#citySky)" />
+  <circle cx="600" cy="300" r="120" fill="#f0b45a" opacity="0.6" />
+  <path d="M0,600 L0,480 L60,480 L60,420 L90,360 L120,420 L120,480 L180,480 L180,450 L220,450 L220,600 Z" fill="#16192b" />
+  <path d="M220,600 L220,400 L280,330 L340,400 L340,600 Z" fill="#101324" />
+  <path d="M340,600 L340,460 L420,460 L460,380 L500,460 L540,460 L540,600 Z" fill="#16192b" />
+  <path d="M540,600 L540,350 L600,240 L660,350 L660,600 Z" fill="#0d0f1c" />
+  <path d="M660,600 L660,440 L720,440 L760,370 L800,440 L850,440 L850,600 Z" fill="#16192b" />
+  <path d="M850,600 L850,410 L920,330 L990,410 L990,600 Z" fill="#101324" />
+  <path d="M990,600 L990,470 L1060,470 L1090,400 L1120,470 L1200,470 L1200,600 Z" fill="#16192b" />
+  <rect y="550" width="1200" height="50" fill="#0a0c16" />
+</svg>

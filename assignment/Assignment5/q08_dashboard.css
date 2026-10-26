@@ -1,0 +1,64 @@
+﻿/* ---------- Q8: Dashboard Layout ---------- */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background-color: #eef2f7; color: #222; }
+/* Fixed header at the top */
+header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 60px;
+padding: 0 24px;
+display: flex;
+align-items: center;
+background-color: #1f3a5f;
+color: #fff;
+z-index: 10;
+}
+header h1 { margin: 0; font-size: 1.4rem; }
+/* Flex layout: sidebar left, content right; padding-top clears the fixed header */
+.layout {
+display: flex;
+padding-top: 60px;
+min-height: 100vh;
+}
+/* Sidebar stretches to the full screen height (flex stretch + min-height) */
+.sidebar {
+width: 220px;
+flex-shrink: 0;
+background-color: #14283f;
+padding: 20px 0;
+}
+.sidebar nav { position: sticky; top: 80px; } /* stays visible while scrolling */
+.sidebar a {
+display: block;
+padding: 12px 24px;
+color: #fff;
+text-decoration: none;
+}
+.sidebar a:hover { background-color: #4f8fc0; }
+/* Content boxes: flex-wrap + gap = even spacing */
+.content {
+flex: 1;
+display: flex;
+flex-wrap: wrap;
+align-content: flex-start;
+gap: 24px;
+padding: 24px;
+}
+.box {
+flex: 1 1 260px;
+padding: 24px;
+background-color: #ffffff;
+border-radius: 12px;
+box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+.box h2 { margin-top: 0; color: #1f3a5f; }
+.big { font-size: 2.2rem; font-weight: bold; margin: 0; }
+/* Small screens: sidebar stacks above the content */
+@media (max-width: 768px) {
+.layout { flex-direction: column; }
+.sidebar { width: 100%; padding: 0; }
+.sidebar nav { position: static; display: flex; flex-wrap: wrap; }
+.sidebar a { flex: 1 1 50%; text-align: center; }
+}

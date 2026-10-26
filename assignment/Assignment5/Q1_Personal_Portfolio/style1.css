@@ -1,0 +1,70 @@
+﻿/* ---------- Q1: Personal Portfolio ---------- */
+* { box-sizing: border-box; }
+html { font-size: 100%; } /* 100% = 16px, base for rem units */
+
+/* Flex column + min-height:100vh pushes the footer to the bottom */
+body {
+margin: 0;
+min-height: 100vh; /* vh unit */
+display: flex;
+flex-direction: column;
+font-family: Arial, Helvetica, sans-serif;
+background-color: #f4f1ea; /* light background */
+color: #222222; /* dark text -> high contrast */
+}
+/* Fixed header (position: fixed) */
+header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%; /* % unit */
+height: 70px; /* px unit */
+padding: 0 5%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #1f3a5f;
+color: #ffffff;
+z-index: 10;
+}
+header h1 { margin: 0; font-size: 1.5rem; } /* rem unit */
+nav a {
+color: #ffffff;
+text-decoration: none;
+margin-left: 1.5em; /* em unit */
+font-weight: bold;
+}
+nav a:hover { color: #ffd166; }
+/* main grows to fill free space; padding-top clears the fixed header */
+main { flex: 1; padding-top: 70px; }
+.hero {
+min-height: 70vh;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+gap: 3rem;
+padding: 2rem 5%;
+}
+.hero img {
+width: 16rem;
+height: 16rem;
+border-radius: 50%;
+border: 6px solid #1f3a5f;
+}
+.bio { max-width: 38em; }
+.bio h2 { font-size: 2.2rem; color: #1f3a5f; margin-top: 0; }
+.bio p { font-size: 1.15em; line-height: 1.7; }
+.more {
+padding: 4rem 5%;
+min-height: 60vh;
+background-color: #1f3a5f;
+color: #ffffff;
+}
+footer {
+padding: 1rem 5%;
+text-align: center;
+background-color: #14283f;
+color: #e8e8e8;
+}
+footer p { margin: 0; }

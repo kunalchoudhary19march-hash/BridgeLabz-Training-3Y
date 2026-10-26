@@ -1,0 +1,35 @@
+﻿/* ---------- Q3: Team Members (CSS Grid) ---------- */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background-color: #eef2f7; color: #222; }
+header { padding: 2rem; text-align: center; }
+header h1 { margin: 0; color: #1f3a5f; }
+/* Three equal columns in one row */
+.team {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 24px;
+max-width: 1000px;
+margin: 0 auto;
+padding: 24px;
+}
+/* Box model: uniform padding, border, radius and shadow */
+.card {
+padding: 24px;
+margin: 0;
+background-color: #ffffff;
+border: 2px solid #c9d3e0;
+border-radius: 14px;
+box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+text-align: center;
+}
+.card h2 { margin: 0 0 6px; color: #1f3a5f; }
+.role { margin: 0 0 14px; font-weight: bold; color: #4f6f94; }
+/* Highlighted card: different background and border style */
+.card.lead {
+background-color: #fff4d6;
+border: 3px dashed #e0a100;
+}
+/* Responsive: single column below 600px */
+@media (max-width: 599px) {
+.team { grid-template-columns: 1fr; }
+}
