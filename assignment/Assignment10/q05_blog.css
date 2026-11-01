@@ -1,0 +1,17 @@
+/* Override Bootstrap theme variables (CSS custom properties) */
+:root {
+ --bs-primary: #2e7d6b;
+ --bs-primary-rgb: 46, 125, 107;
+ --bs-font-sans-serif: "Poppins", system-ui, sans-serif;
+ --bs-body-font-family: var(--bs-font-sans-serif);
+}
+/* Buttons use their own variables, so set them for the new theme colour */
+.btn-primary {
+ --bs-btn-bg: #2e7d6b; --bs-btn-border-color: #2e7d6b;
+ --bs-btn-hover-bg: #236152; --bs-btn-hover-border-color: #236152;
+ --bs-btn-active-bg: #1c5043; --bs-btn-active-border-color: #1c5043;
+}
+.theme-header { background-color: var(--bs-primary); }
+h1, h2, h4, .card-title { color: inherit; font-weight: 600; }
+main h2 { color: var(--bs-primary); }
+.card { border-top: 4px solid var(--bs-primary); }

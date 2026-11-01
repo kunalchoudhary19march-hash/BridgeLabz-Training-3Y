@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 450" width="100%" height="450">
+  <defs>
+    <linearGradient id="jaipurSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff7043" />
+      <stop offset="60%" stop-color="#ffab91" />
+      <stop offset="100%" stop-color="#ffe0b2" />
+    </linearGradient>
+    <linearGradient id="pinkSandstone" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e57373" />
+      <stop offset="100%" stop-color="#c62828" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="450" fill="url(#jaipurSky)" />
+  <!-- Palace Facade Base -->
+  <rect x="250" y="160" width="700" height="290" fill="url(#pinkSandstone)" />
+  <!-- Domes -->
+  <!-- Center Dome -->
+  <path d="M 540 160 Q 600 60 660 160 Z" fill="#d32f2f" />
+  <line x1="600" y1="60" x2="600" y2="30" stroke="#ffd54f" stroke-width="6" />
+  <!-- Left Dome -->
+  <path d="M 330 160 Q 380 90 430 160 Z" fill="#d32f2f" />
+  <line x1="380" y1="90" x2="380" y2="65" stroke="#ffd54f" stroke-width="5" />
+  <!-- Right Dome -->
+  <path d="M 770 160 Q 820 90 870 160 Z" fill="#d32f2f" />
+  <line x1="820" y1="90" x2="820" y2="65" stroke="#ffd54f" stroke-width="5" />
+  <!-- Jharokhas / Windows -->
+  <rect x="350" y="210" width="60" height="80" rx="30" fill="#ffebee" stroke="#b71c1c" stroke-width="4" />
+  <rect x="470" y="210" width="60" height="80" rx="30" fill="#ffebee" stroke="#b71c1c" stroke-width="4" />
+  <rect x="570" y="190" width="60" height="100" rx="30" fill="#ffebee" stroke="#b71c1c" stroke-width="4" />
+  <rect x="670" y="210" width="60" height="80" rx="30" fill="#ffebee" stroke="#b71c1c" stroke-width="4" />
+  <rect x="790" y="210" width="60" height="80" rx="30" fill="#ffebee" stroke="#b71c1c" stroke-width="4" />
+  <!-- Grand Arch Entrance -->
+  <path d="M 520 450 L 520 330 Q 600 270 680 330 L 680 450 Z" fill="#b71c1c" />
+</svg>

@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q4 - Restaurant Menu</title>
+<!-- Bootstrap 5 CSS via CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Our own CSS (loaded after Bootstrap so it can override it) -->
+<link rel="stylesheet" href="style4.css">
+</head>
+<body class="bg-light">
+<header class="bg-danger text-white text-center py-4">
+<h1>Spice Garden</h1>
+<p class="lead mb-0">Today's Menu</p> <!-- lead = larger intro text -->
+</header>
+<main class="container py-4">
+<div class="row g-4">
+<section class="col-lg-8">
+<h2 class="text-center mb-3">Menu Items</h2>
+<!-- table-striped, table-hover, table-responsive = Bootstrap table helpers -->
+<div class="table-responsive">
+<table class="table table-striped table-hover align-middle">
+<thead class="table-dark"><tr><th>Item</th><th>Category</th><th class="text-end">Price</th></tr></thead>
+<tbody>
+<tr><td>Paneer Tikka</td><td>Starter</td><td class="text-end">$7</td></tr>
+<tr><td>Tomato Soup</td><td>Starter</td><td class="text-end">$4</td></tr>
+<tr><td>Butter Chicken</td><td>Main Course</td><td class="text-end">$12</td></tr>
+<tr><td>Dal Makhani</td><td>Main Course</td><td class="text-end">$9</td></tr>
+<tr><td>Gulab Jamun</td><td>Dessert</td><td class="text-end">$5</td></tr>
+<tr><td>Mango Lassi</td><td>Drink</td><td class="text-end">$4</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<aside class="col-lg-4">
+<h2 class="text-center mb-3">Chef's Specials</h2>
+<ul class="list-group mb-4"> <!-- list-group = styled list -->
+<li class="list-group-item d-flex justify-content-between"><span>Royal Thali</span><strong>$15</strong></li>
+<li class="list-group-item d-flex justify-content-between"><span>Hyderabadi Biryani</span><strong>$13</strong></li>
+<li class="list-group-item d-flex justify-content-between"><span>Rasmalai</span><strong>$6</strong></li>
+</ul>
+<figure class="text-center">
+<img src="images/food.svg" class="img-fluid rounded shadow-sm" alt="Royal Thali">
+<figcaption class="mt-2 text-muted">Our famous Royal Thali</figcaption>
+</figure>
+</aside>
+</div>
+</main>
+<footer class="bg-dark text-white text-center py-3"><small>Open daily 11 AM &ndash; 11 PM</small></footer>
+</body></html>
+

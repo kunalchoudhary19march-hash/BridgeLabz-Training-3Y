@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="100%" height="220">
+  <defs>
+    <linearGradient id="forestSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#bbf2c4" />
+      <stop offset="100%" stop-color="#e8f5e9" />
+    </linearGradient>
+    <linearGradient id="treeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2e7d6b" />
+      <stop offset="100%" stop-color="#1b4d42" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="350" fill="url(#forestSky)" />
+  <!-- Mountains in background -->
+  <polygon points="50,260 170,120 290,260" fill="#a5d6a7" opacity="0.6" />
+  <polygon points="220,260 380,90 540,260" fill="#81c784" opacity="0.6" />
+  <!-- Sun -->
+  <circle cx="480" cy="80" r="35" fill="#fff59d" />
+  <!-- Ground -->
+  <rect y="250" width="600" height="100" fill="#388e3c" />
+  <!-- Pathway -->
+  <polygon points="260,350 340,350 310,250 290,250" fill="#d7ccc8" />
+  <!-- Trees -->
+  <polygon points="120,260 100,160 140,160" fill="url(#treeGrad)" />
+  <polygon points="120,180 105,100 135,100" fill="url(#treeGrad)" />
+  <rect x="116" y="260" width="8" height="25" fill="#5d4037" />
+
+  <polygon points="460,260 435,150 485,150" fill="url(#treeGrad)" />
+  <polygon points="460,170 442,85 478,85" fill="url(#treeGrad)" />
+  <rect x="456" y="260" width="8" height="25" fill="#5d4037" />
+  <text x="300" y="325" font-family="'Poppins', sans-serif" font-size="16" font-weight="600" fill="#ffffff" text-anchor="middle">A Peaceful Morning Walk in the Forest</text>
+</svg>

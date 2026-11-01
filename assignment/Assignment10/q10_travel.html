@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q10 - Travel Agency</title>
+<!-- Bootstrap 5 CSS via CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Our own CSS (loaded after Bootstrap so it can override it) -->
+<link rel="stylesheet" href="q10_travel.css">
+</head>
+<body>
+<header>
+<nav class="navbar navbar-dark bg-dark"><div class="container"><a class="navbar-brand fw-bold"
+ href="#">WanderWorld Travels</a></div></nav>
+</header>
+<main>
+<!-- Carousel: data-bs-ride starts auto-sliding; data-bs-interval on each slide sets its own time (ms) -->
+<div id="dest" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#dest" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+<button type="button" data-bs-target="#dest" data-bs-slide-to="1" aria-label="Slide 2"></button>
+<button type="button" data-bs-target="#dest" data-bs-slide-to="2" aria-label="Slide 3"></button>
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active" data-bs-interval="3000"><img src="images/dest1.svg" class="d-block w-100"
+ alt="Maldives"><div class="carousel-caption"><h2>Maldives</h2><p>Crystal-clear water and white sand
+ beaches.</p></div></div>
+<div class="carousel-item" data-bs-interval="5000"><img src="images/dest2.svg" class="d-block w-100"
+ alt="Swiss Alps"><div class="carousel-caption"><h2>Swiss Alps</h2><p>Snow-capped peaks and scenic train
+ rides.</p></div></div>
+<div class="carousel-item" data-bs-interval="7000"><img src="images/dest3.svg" class="d-block w-100"
+ alt="Jaipur"><div class="carousel-caption"><h2>Jaipur</h2><p>Royal palaces, forts and colourful
+ bazaars.</p></div></div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#dest" data-bs-slide="prev"><span
+ class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></button>
+<button class="carousel-control-next" type="button" data-bs-target="#dest" data-bs-slide="next"><span
+ class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></button>
+</div>
+<section class="container py-5">
+<h2 class="h4">Your Booking Progress</h2>
+<!-- progress-bar-striped + progress-bar-animated = moving stripes -->
+<div class="progress" role="progressbar" aria-label="Booking" aria-valuenow="70" aria-valuemin="0"
+ aria-valuemax="100">
+<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 70%">70%</div>
+</div>
+<p class="text-muted mt-2">Almost there! Complete payment to confirm your trip.</p>
+</section>
+</main>
+<footer class="bg-dark text-white py-4">
+<div class="container text-center">
+<p class="mb-1">Contact us: +91 98765 43210 &middot; info@wanderworld.example</p>
+<p class="mb-0"><small>12 Travel Street, Mathura, Uttar Pradesh &middot; &copy; 2026 WanderWorld</small></p>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body></html>

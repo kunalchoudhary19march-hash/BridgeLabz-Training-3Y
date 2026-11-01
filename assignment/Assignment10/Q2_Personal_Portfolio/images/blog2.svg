@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="100%" height="220">
+  <defs>
+    <linearGradient id="gardenSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff8e1" />
+      <stop offset="100%" stop-color="#ffe082" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="350" fill="url(#gardenSky)" />
+  <!-- Balcony railing -->
+  <rect y="230" width="600" height="15" fill="#37474f" />
+  <line x1="80" y1="245" x2="80" y2="350" stroke="#37474f" stroke-width="8" />
+  <line x1="180" y1="245" x2="180" y2="350" stroke="#37474f" stroke-width="8" />
+  <line x1="280" y1="245" x2="280" y2="350" stroke="#37474f" stroke-width="8" />
+  <line x1="380" y1="245" x2="380" y2="350" stroke="#37474f" stroke-width="8" />
+  <line x1="480" y1="245" x2="480" y2="350" stroke="#37474f" stroke-width="8" />
+  <!-- Potted plants on the ledge -->
+  <!-- Pot 1 -->
+  <polygon points="120,230 135,230 132,205 123,205" fill="#bf360c" />
+  <circle cx="127" cy="195" r="14" fill="#2e7d6b" />
+  <circle cx="127" cy="188" r="5" fill="#e91e63" />
+  <!-- Pot 2 -->
+  <polygon points="260,230 285,230 281,195 264,195" fill="#e65100" />
+  <ellipse cx="272" cy="180" rx="16" ry="22" fill="#43a047" />
+  <circle cx="272" cy="170" r="6" fill="#fbc02d" />
+  <!-- Pot 3 -->
+  <polygon points="420,230 450,230 445,190 425,190" fill="#6d4c41" />
+  <circle cx="435" cy="175" r="20" fill="#2e7d6b" />
+  <circle cx="435" cy="165" r="7" fill="#ec407a" />
+  <text x="300" y="325" font-family="'Poppins', sans-serif" font-size="16" font-weight="600" fill="#263238" text-anchor="middle">Balcony Garden with Fresh Greenery</text>
+</svg>

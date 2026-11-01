@@ -1,0 +1,4 @@
+/* Hover: bigger shadow (like .shadow-lg) + slight lift, smooth transition */
+.plan { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.plan:hover { transform: translateY(-10px); box-shadow: 0 1rem 3rem rgba(0,0,0,.25) !important; }
+.plan li { padding: .35rem 0; }

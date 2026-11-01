@@ -1,0 +1,4 @@
+﻿/* Q1: custom touches on top of Bootstrap */
+.hero { background: linear-gradient(135deg, #0d6efd, #6610f2); }
+.feature { background: #f8f9fa; border-radius: 12px; border: 1px solid #dee2e6; }
+

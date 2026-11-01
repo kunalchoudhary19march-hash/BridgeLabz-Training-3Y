@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q1 - Company Landing Page</title>
+<!-- Bootstrap 5 CSS via CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Our own CSS (loaded after Bootstrap so it can override it) -->
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<!-- Full-width header with navbar: navbar-expand-lg collapses on small screens -->
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container-fluid px-4">
+<a class="navbar-brand fw-bold" href="#">NovaTech</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+ aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation"><span
+ class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero: py-5 = vertical padding, text-center = centred text -->
+<section id="home" class="hero text-center text-white py-5">
+<div class="container py-5">
+<h1 class="display-3 fw-bold">Build Smarter. Launch Faster.</h1>
+<p class="lead mb-4">NovaTech helps startups turn ideas into products with simple cloud tools.</p>
+<a href="#features" class="btn btn-warning btn-lg px-5">Get Started</a>
+</div>
+</section>
+<!-- Grid: container > row > col. col-md-4 = 3 columns on medium+, stacked on phones -->
+<section id="features" class="container py-5">
+<h2 class="text-center mb-4">Why Choose Us</h2>
+<div class="row g-4 text-center">
+<div class="col-md-4"><div class="feature p-4 h-100"><h3 class="h5">Fast Setup</h3><p>Go live in minutes
+ with ready-made templates.</p></div></div>
+<div class="col-md-4"><div class="feature p-4 h-100"><h3 class="h5">Secure</h3><p>Your data is encrypted
+ and backed up daily.</p></div></div>
+<div class="col-md-4"><div class="feature p-4 h-100"><h3 class="h5">24/7 Support</h3><p>Our team is always
+ one message away.</p></div></div>
+</div>
+</section>
+</main>
+<footer id="contact" class="bg-dark text-white text-center py-4">
+<p class="mb-0">&copy; 2026 NovaTech &middot; hello@novatech.example</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body></html>
+
