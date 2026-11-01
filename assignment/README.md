@@ -19,4 +19,6 @@ This section contains all structured code solutions and resources for Web Develo
 | **Assignment 8** | HTML & CSS Solutions — Pseudo-Classes, Tooltips, Grid Showcase, Selectors, Animations & UI (Q1–Q10) | [Assignment 8](./Assignment8/) |
 | **Assignment 9** | HTML & CSS Solutions — Responsive Web Design, Media Queries, Filters, Fluid Typography & Dashboard (Q1–Q10) | [Assignment 9](./Assignment9/) |
 | **Assignment 10** | Bootstrap 5 — Responsive Grids, Components, Themes, Utilities & Showcase (Q1–Q10) | [Assignment 10](./Assignment10/) |
+| **JavaScript Assignment 1** | Core JavaScript — Variables, Data Types, Control Flow, Math & Logic (Q1–Q10) | [JavaScript Assignment 1](./JavaScript_Assignment1/) |
+
 
